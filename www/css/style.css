@@ -1,0 +1,31 @@
+@import url('/css/common.css');
+
+body {
+    background: linear-gradient(to right, red, blue,yellow);
+}
+
+header nav ul a {
+    transition-property: border, background-size, color;
+    transition-duration: 500ms;
+}
+
+header nav ul a:hover {
+    border-width: 0;
+    background-size: 200%;
+    color: black;
+} 
+
+a#red {
+    background-image: url("/img/red.png");
+     animation-delay: 1.5s;
+}
+
+a#blue {
+    background-image: url("/img/blue.jpg");
+     animation-delay: 2s;
+}
+
+a#yellow {
+    background-image: url("/img/yellow.jpg");
+     animation-delay: 2.5s;
+}

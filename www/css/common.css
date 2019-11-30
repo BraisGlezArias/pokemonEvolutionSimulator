@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One:700,900&display=swap');
+
+body {
+    font-family: 'Passion One', display;
+    min-height: 95vh;
+    color: white;
+    display: flex;
+}
+
+header {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1, header nav ul a{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    animation-delay: 1s;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav ul a {
+    border: 0.5rem solid white;
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+
+    background-position: center;
+    background-size: 100%;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}

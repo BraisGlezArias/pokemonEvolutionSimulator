@@ -1,0 +1,221 @@
+@import url('/css/common.css');
+
+body {
+    margin: 0;
+    background-color: blue;
+    height: 100vh;
+}
+
+header h1, 
+header nav ul, 
+header section {
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('/img/GameBoys.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation-delay: 1.5s;
+    margin: 7%;
+}
+
+header nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 12%;
+}
+
+li img.Haunter, 
+li img.Graveler {
+    position: relative;
+    visibility: visible;
+    width: 24%;
+    margin-left: 20%;
+}
+
+li img.Gengar, 
+li img.Golem {
+    position: absolute;
+    visibility: hidden;
+    width: 12%;
+    margin-left: 10%;
+}
+
+header section {
+    width: 30%;
+    height: 5%;
+    animation-delay: 2.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 3%;
+}
+
+header section button.start {
+    width: 35%;
+    height: 100%;
+    font-size: 100%;
+}
+
+header section button.cancel {
+    height: 100%;
+    width: 10%;
+    background-image: url('/img/bbutton.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    visibility: hidden;
+}
+
+header aside {
+    position: absolute;
+    left: 42.5%;
+    top: 32.5%;
+    width: 2.5%;
+    visibility: hidden;
+}
+
+header aside img {
+    width: 100%;
+}
+
+p.state {
+    visibility: hidden;
+    text-align: center;
+    font-size: 300%;
+}
+
+.trade {
+    animation-name: trade;
+    animation-duration: 5s;
+}
+
+@keyframes trade {
+    0% {
+        left: 42.5%;
+        top: 32.5%;
+        visibility: visible;
+    }
+
+   15% {
+       left: 50.5%;
+       top: 32.5%;
+   }
+
+    30% {
+        left: 50.5%;
+        top: 19.5%;
+    }
+
+    60% {
+        left: 77%;
+        top: 19.5%;
+    }
+
+    75% {
+        left: 77%;
+        top: 32.5%;
+    }
+
+    100% {
+        left: 69%;
+        top: 32.5%;
+    }
+}
+
+.tradeReverse {
+    left: 68%;
+    top: 35.5%;
+    animation-name: tradeReverse;
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+@keyframes tradeReverse {
+    0% {
+        left: 42.5%;
+        top: 32.5%;
+    }
+
+  15% {
+       left: 50.5%;
+       top: 32.5%;
+   }
+
+    30% {
+        left: 50.5%;
+        top: 19.5%;
+    }
+
+    60% {
+        left: 77%;
+        top: 19.5%;
+    }
+
+    75% {
+        left: 77%;
+        top: 32.5%;
+    }
+
+    100% {
+        left: 69%;
+        top: 32.5%;
+        visibility: visible;
+    }
+}
+
+img.evol {
+    position: relative;
+    width: 24%;
+    animation-name: evol;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin-left: 20%;
+}
+
+@keyframes evol {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img.evol2 {
+    position: absolute;
+    width: 12%;
+    animation-name: evol2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin-left: 10%;
+}
+
+@keyframes evol2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

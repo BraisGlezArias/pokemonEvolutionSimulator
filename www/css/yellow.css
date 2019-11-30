@@ -1,0 +1,134 @@
+
+@import url('/css/common.css');
+
+body {
+    height: 50vh;
+    background-color: yellow;
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-items: center center;
+}
+
+header h1, 
+header nav ul {
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    display: grid;
+    grid-template-rows: auto, 1fr;
+}
+
+header nav ul.Pokemons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    animation-delay: 1.5s;
+}
+
+header nav ul.Stones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 100vh; 
+    animation-delay: 2s;
+}
+
+header nav ul li {
+    display: grid;
+    grid-template-rows: auto, 1fr;
+    place-items: center center;
+}
+
+header nav ul.Stones li {
+    height: 10vh;
+    width: 27%;
+}
+
+header nav ul.Stones li img {
+    width:100%;
+    cursor: pointer;
+}
+
+li img#Eevee,
+li img#Pikachu {
+    position: relative;
+}
+
+li img#Flareon,
+li img#Jolteon,
+li img#Vaporeon,
+li img#Raichu {
+    position: absolute;
+    visibility: hidden;
+}
+
+li img#AngryPikachu {
+    position: absolute;
+    visibility: hidden;
+    width: 20%;
+}
+
+li button.cancel {
+    height: 4rem;
+    width: 5rem;
+    background-image: url('/img/bbutton.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+header p.state {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+li img#evol {
+    position: relative;
+    animation-name: evol;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes evol {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+li img#evol2 {
+    position: absolute;
+    animation-name: evol2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes evol2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
