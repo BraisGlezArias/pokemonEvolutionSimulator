@@ -1,3 +1,5 @@
+'use strict';
+
 const buttons = document.querySelectorAll('button');
 
 const audio = document.createElement('audio');

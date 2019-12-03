@@ -1,3 +1,5 @@
+'use strict';
+
 const button = document.querySelector('button.start');
 const header = document.querySelector('header');
 const text = document.querySelector('p');

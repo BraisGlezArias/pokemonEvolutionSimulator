@@ -1,3 +1,5 @@
+'use strict';
+
 const liP1 = document.querySelector('header nav ul.Pokemons li.Eevee');
 const imgE = liP1.lastElementChild;
 const imgV = imgE.previousElementSibling;
