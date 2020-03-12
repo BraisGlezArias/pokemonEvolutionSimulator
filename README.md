@@ -1,2 +1,2 @@
 # pokemonEvolutionSimulator
-Building a Pokemon Evolution's Simulator with JavaScript.
+uilding a Pokemon Evolution's Simulator with JavaScript.
